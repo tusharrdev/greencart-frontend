@@ -15,7 +15,7 @@ const Login = () => {
     try {
         event.preventDefault();
 
-        const {data} = await axios.post(`/api/user/${state}`,{
+        const {data} = await axios.post(`${backendUrl}/api/user/${state}`,{
             name, email, password
         });
 
